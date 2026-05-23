@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectSpace - Social Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar-left">
+            <div class="profile-card">
+                <div class="profile-avatar"></div>
+                <h3>Joshua Izuchukwu</h3>
+                <p>@josh_systems</p>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="active">🏠 Home Feed</a>
+                <a href="#">👤 My Profile</a>
+                <a href="#">📩 Messages</a>
+                <a href="#">⚙️ Settings</a>
+            </nav>
+        </aside>
+
+        <main class="feed-container">
+            
+            <section class="post-box-container">
+                <form id="create-post-form">
+                    <textarea id="post-input" placeholder="What's on your mind?" required></textarea>
+                    <button type="submit" id="submit-post-btn">Post</button>
+                </form>
+            </section>
+
+            <section id="timeline-feed">
+                </section>
+
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="widget-box">
+                <h4>Who to Follow</h4>
+                <div class="suggestion-list">
+                    <div class="suggested-user">
+                        <div class="mini-avatar"></div>
+                        <div>
+                            <h5>Coach Lola</h5>
+                            <p>@lola_va_coach</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

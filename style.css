@@ -1,0 +1,175 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6; /* Light, clean background */
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* 1. The Main Grid Container */
+.app-container {
+    display: grid;
+    grid-template-columns: 260px 600px 320px; /* Precise column widths */
+    gap: 24px;
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/* 2. Left Sidebar Styling */
+.sidebar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background: #e5e7eb;
+    border-radius: 50%;
+    margin: 0 auto 12px auto;
+}
+
+.nav-menu {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #4b5563;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+/* 3. Center Column & Post Creation Box */
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.post-box-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#create-post-form textarea {
+    width: 100%;
+    height: 90px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    resize: none;
+    font-size: 15px;
+    outline: none;
+}
+
+#create-post-form textarea:focus {
+    border-color: #2563eb;
+}
+
+#submit-post-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    float: right;
+    transition: background 0.2s;
+}
+
+#submit-post-btn:hover {
+    background: #1d4ed8;
+}
+
+/* 4. Right Sidebar & Widgets */
+.sidebar-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.widget-box h4 {
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.suggested-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.mini-avatar {
+    width: 40px;
+    height: 40px;
+    background: #e5e7eb;
+    border-radius: 50%;
+}
+
+.suggested-user h5 {
+    font-size: 14px;
+}
+
+.suggested-user p {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.follow-btn {
+    margin-left: auto;
+    background: #1f2937;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    background: #374151;
+}
