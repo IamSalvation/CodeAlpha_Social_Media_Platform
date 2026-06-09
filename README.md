@@ -1,4 +1,4 @@
-# CodeAlpha_Social_Media_Platform
+# Decoded_Social_Media_Platform
 
 A dynamic, interactive three-column social media dashboard feed built with Node.js, Express, and CSS Grid. This application features real-time frontend state management allowing users to create posts, write nested comments, toggle likes, and interact with user profiles.
 
